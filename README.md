@@ -18,7 +18,7 @@ Of course, for this to work, you had to refer to the movies.csv file attached, a
 
 -----
 
-Then, we built a content-based recommendation system, which, as mentioned earlier, is particularly useful for addressing the cold-start problem, a notorious problem asscoiated with collaborative filtering. This issue arises when new users or items lack sufficient interaction data, making it difficult for collaborative models to generate recommendations. Content-based filtering helps overcome this by relying on item and user features rather than past interactions.
+Then, we built a content-based recommendation system, which, as mentioned earlier, is particularly useful for addressing the cold-start problem, a notorious problem associated with collaborative filtering. This issue arises when new users or items lack sufficient interaction data, making it difficult for collaborative models to generate recommendations. Content-based filtering helps overcome this by relying on item and user features rather than past interactions.
 
 We performed feature engineering by extracting the release year from the movie titles and grouping the years into decades. We also extracted the individual genres listed for each film. Additionally, we removed films that were missing a release year—only 24 out of 9,742 entries were affected.
 
