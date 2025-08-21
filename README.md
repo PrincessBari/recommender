@@ -22,7 +22,7 @@ Then, we built a content-based recommendation system, which, as mentioned earlie
 
 We performed feature engineering by extracting the release year from the movie titles and grouping the years into decades. We also extracted the individual genres listed for each film. Additionally, we removed films that were missing a release year—only 24 out of 9,742 entries were affected.
 
-To build our content-based filtering recommendation system, we first restructured the dataset so that each row represents a movie and each column represents a feature (genre or decade). For the "genres" column, we applied one-hot encoding to represent each genre as a binary feature - with "1" indicating the movie belonged to that genre and "0" meaning it didn't.
+To build our content-based recommendation system, we first restructured the dataset so that each row represents a movie and each column represents a feature (genre or decade). For the "genres" column, we applied one-hot encoding to represent each genre as a binary feature - with "1" indicating the movie belonged to that genre and "0" meaning it didn't.
 
 Next, we transformed the "decade" column using one-hot encoding, creating a separate column for each decade. We then combined the genre and decade features by concatenating them into a single feature matrix. With all features consolidated into one dataframe, we were ready to build our content-based recommender.
 
